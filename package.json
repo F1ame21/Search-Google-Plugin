@@ -13,8 +13,13 @@
   "main": "./extension.js",
   "contributes": {
     "commands": [{
-      "command": "googlesearch.helloWorld",
-      "title": "Hello World"
+      "command": "googleSearch",
+      "title": "GoogleSearch"
+    }],
+    "keybindings": [{
+      "command": "googleSearch",
+      "key": "ctrl+f1",
+      "when": "editorTextFocus"
     }]
   },
   "scripts": {
